@@ -1,5 +1,7 @@
 package fi.arcada.codechallenge;
 
+import static fi.arcada.codechallenge.Statistics.calcMean;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
@@ -30,13 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private double calcMean(double[] data) {
-        double sum = 0;
-        for (double value : data) {
-            sum += value;
-        }
-        return sum / data.length;
-    }
+
 
 
     public void buttonHandler(View view) {
